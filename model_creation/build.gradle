@@ -1,0 +1,10 @@
+apply plugin: 'java-library'
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    api fileTree(include: ['wekaSTRIPPED.jar'], dir: '../commonjars/libs')
+    compile project(path: ':feature_extraction')
+}
+
+sourceCompatibility = "7"
+targetCompatibility = "7"
